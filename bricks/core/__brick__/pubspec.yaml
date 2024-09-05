@@ -9,7 +9,7 @@ environment:
 dependencies:
   app_settings: ^5.1.1
   cached_network_image: ^3.4.1
-  collection: ^1.19.0
+  collection: ^1.18.0
   connectivity_plus: ^6.0.5
   encrypt: ^5.0.3
   faker: ^2.2.0
