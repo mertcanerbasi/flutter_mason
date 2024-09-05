@@ -18,8 +18,9 @@ class AppViewModel extends BaseViewModel {
     _checkForUpdate();
     _checkConnectivity();
   }
-  ConnectivityResult _connectivityStatus = ConnectivityResult.other;
-  bool get isConnect => _connectivityStatus != ConnectivityResult.none;
+
+  List<ConnectivityResult> _connectivityStatus = [ConnectivityResult.other];
+  bool get isConnect => !_connectivityStatus.contains(ConnectivityResult.none);
   void _checkConnectivity() {
     _connectivity.onConnectivityChanged.listen((event) {
       _connectivityStatus = event;
