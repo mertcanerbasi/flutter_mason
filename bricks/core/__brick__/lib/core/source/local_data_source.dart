@@ -17,7 +17,7 @@ abstract class LocalDataSource {
 
 @Environment(Environment.prod)
 @Environment(Environment.dev)
-@Singleton(as: LocalDataSource)
+@LazySingleton(as: LocalDataSource, order: -999)
 class LocalDataSourceImpl implements LocalDataSource {
   final AppStorage _getStorage;
   LocalDataSourceImpl(this._getStorage);
@@ -54,7 +54,7 @@ class LocalDataSourceImpl implements LocalDataSource {
 }
 
 @Environment(Environment.test)
-@Singleton(as: LocalDataSource)
+@LazySingleton(as: LocalDataSource, order: -1000)
 class TestLocalDataSourceImpl implements LocalDataSource {
   @override
   Future<void> clear() async {
