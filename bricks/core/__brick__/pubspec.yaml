@@ -41,8 +41,6 @@ dev_dependencies:
   json_serializable: ^6.8.0
   retrofit_generator: ^8.2.1
   route_map_generator: ^0.0.17
-  launcher_icon:
-    git: https://github.com/mertcanerbasi/launcher_icon.git
 
 flutter:
   uses-material-design: true
