@@ -1,0 +1,12 @@
+{
+  "@@locale": "en",
+  "appearance": "Appearance",
+  "dark": "Dark",
+  "home": "Home",
+  "language": "Language",
+  "licenses": "Licenses",
+  "light": "Light",
+  "settings": "Settings",
+  "systemDefault": "System Default",
+  "version": "Version"
+}

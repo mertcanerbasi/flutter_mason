@@ -1,0 +1,61 @@
+name: {{name.lowerCase()}}
+description: Created by Mertcan ERBAŞI
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  app_settings: ^5.1.1
+  cached_network_image: ^3.4.1
+  collection: ^1.19.0
+  connectivity_plus: ^6.0.5
+  encrypt: ^5.0.3
+  faker: ^2.2.0
+  flutter:
+    sdk: flutter
+  flutter_gen: ^5.7.0
+  flutter_localizations:
+    sdk: flutter
+  get_it: ^7.7.0
+  image_picker: ^1.1.2
+  injectable: ^2.4.4
+  intl: ^0.19.0
+  json_annotation: ^4.9.0
+  package_info_plus: ^8.0.2
+  pretty_dio_logger: ^1.4.0
+  restart_app: ^1.2.1
+  retrofit: ^4.3.0
+  route_map: ^0.0.17
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  build_runner: ^2.4.12
+  flutter_gen_runner: ^5.7.0
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^2.6.2
+  json_serializable: ^6.8.0
+  retrofit_generator: ^8.2.1
+  route_map_generator: ^0.0.17
+  launcher_icon:
+    git: https://github.com/mertcanerbasi/launcher_icon.git
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_gen:
+  output: lib/core/res
+  assets:
+    outputs:
+      class_name: AppAssets
+  colors:
+    outputs:
+      class_name: AppColors
+    inputs:
+      - assets/colors.xml

@@ -1,0 +1,15 @@
+name: page
+description: Create StatefulWidget with BaseState and ViewModel
+
+version: 0.1.0+1
+
+
+environment:
+  mason: ">=0.1.0-dev.51 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Page Name
+    default: Sample
+    prompt: What is the name of the page?
