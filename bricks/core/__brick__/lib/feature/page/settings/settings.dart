@@ -1,16 +1,15 @@
 import 'dart:io';
-import '../../../core/base/base_widget.dart';
-import '../../../core/di/locator.dart';
 import '../../../core/res/icons.dart';
-
 import '../../../core/res/l10n/app_localizations.dart';
 import '../../../core/res/l10n/l10n.dart';
-import '../app/app_vm.dart';
-import '../settings/settings_vm.dart';
-import 'package:flutter/material.dart';
-import 'package:route_map/route_map.dart';
 import 'package:app_settings/app_settings.dart';
-import 'package:restart_app/restart_app.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter/material.dart';
+
+import '../../../feature/providers/locale_provider.dart';
+import '../../../feature/providers/siren_provider.dart';
+import '../../../feature/providers/theme_provider.dart';
+import 'package:route_map/route_map.dart';
 
 @RouteMap(name: "settings")
 class SettingsPage extends StatefulWidget {
